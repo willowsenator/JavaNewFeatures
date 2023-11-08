@@ -1,4 +1,4 @@
-package org.willowsenator;
+package org.willowsenator.textblocks;
 
 public class TextBlocks {
     private static final String sql = """

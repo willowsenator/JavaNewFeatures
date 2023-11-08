@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0091f37f-580e-4f28-bf24-ed3ff7006787" name="Changes" comment="Add ProductRecord, EnhancedSwitch and TextBlocks">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/FlyingCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/SmartMediaPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/willowsenator/sealed/VehicleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/willowsenator/EnhancedSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/enhancedswitch/EnhancedSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/willowsenator/ProductRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/record/ProductRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/willowsenator/TextBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/textblocks/TextBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/willowsenator/ProductRecordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/willowsenator/record/ProductRecordTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +49,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Article" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -53,38 +71,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "Article",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Develop/projects/java/JavaNewFeatures",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4218391",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;Article&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Develop/projects/java/skeleton-schedule-omar-moreno&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4218391&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.willowsenator.sealed" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.willowsenator.sealed" />
       <recent name="org.willowsenator" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ProductRecordTest.createProductComparison">
+  <component name="RunManager" selected="Gradle.VehicleTest.drive">
+    <configuration name="ProductRecordTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.willowsenator.record.ProductRecordTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="ProductRecordTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -133,7 +180,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ProductRecordTest.createProductCustomConstructor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VehicleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -146,7 +193,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.willowsenator.ProductRecordTest.createProductCustomConstructor&quot;" />
+            <option value="&quot;org.willowsenator.sealed.VehicleTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +204,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ProductRecordTest.createProduct_customConstructor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VehicleTest.drive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -170,31 +217,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.willowsenator.ProductRecordTest.createProduct_customConstructor&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ProductRecordTest.createProduct_nameNotValid" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.willowsenator.ProductRecordTest.createProduct_nameNotValid&quot;" />
+            <option value="&quot;org.willowsenator.sealed.VehicleTest.drive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,11 +243,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ProductRecordTest.createProductComparison" />
-        <item itemvalue="Gradle.ProductRecordTest.createProductCustomConstructor" />
-        <item itemvalue="Gradle.ProductRecordTest.createProduct_customConstructor" />
+        <item itemvalue="Gradle.VehicleTest.drive" />
+        <item itemvalue="Gradle.ProductRecordTest (1)" />
+        <item itemvalue="Gradle.VehicleTest" />
         <item itemvalue="Gradle.ProductRecordTest" />
-        <item itemvalue="Gradle.ProductRecordTest.createProduct_nameNotValid" />
+        <item itemvalue="Gradle.ProductRecordTest.createProductComparison" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +262,10 @@
       <workItem from="1697929682478" duration="1580000" />
       <workItem from="1697931372890" duration="198000" />
       <workItem from="1698005804148" duration="2521000" />
-      <workItem from="1698008618238" duration="17000" />
+      <workItem from="1698008618238" duration="119000" />
+      <workItem from="1698093351274" duration="143000" />
+      <workItem from="1698094689964" duration="1408000" />
+      <workItem from="1699114635713" duration="183000" />
     </task>
     <task id="LOCAL-00001" summary="Add ProductRecord, EnhancedSwitch and TextBlocks">
       <option name="closed" value="true" />
@@ -249,7 +275,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698008247602</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add ProductRecord, EnhancedSwitch and TextBlocks">
+      <option name="closed" value="true" />
+      <created>1698008687968</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698008687968</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add ProductRecord, EnhancedSwitch and TextBlocks">
+      <option name="closed" value="true" />
+      <created>1698008708210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698008708210</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +300,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add ProductRecord, EnhancedSwitch and TextBlocks" />
     <option name="LAST_COMMIT_MESSAGE" value="Add ProductRecord, EnhancedSwitch and TextBlocks" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/willowsenator/record/ProductRecordTest.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

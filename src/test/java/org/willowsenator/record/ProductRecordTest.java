@@ -1,6 +1,7 @@
-package org.willowsenator;
+package org.willowsenator.record;
 
 import org.junit.jupiter.api.Test;
+import org.willowsenator.record.ProductRecord;
 
 import java.math.BigDecimal;
 

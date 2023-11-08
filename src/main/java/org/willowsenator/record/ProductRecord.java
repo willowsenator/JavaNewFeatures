@@ -1,4 +1,4 @@
-package org.willowsenator;
+package org.willowsenator.record;
 
 import java.math.BigDecimal;
 import java.util.Objects;

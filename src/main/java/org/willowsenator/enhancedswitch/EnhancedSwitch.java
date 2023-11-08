@@ -1,4 +1,4 @@
-package org.willowsenator;
+package org.willowsenator.enhancedswitch;
 
 import java.time.LocalDate;
 import java.time.Month;
