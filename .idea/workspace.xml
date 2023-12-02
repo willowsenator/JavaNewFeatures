@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0091f37f-580e-4f28-bf24-ed3ff7006787" name="Changes" comment="Add ProductRecord, EnhancedSwitch and TextBlocks">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/FlyingCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/SmartMediaPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/sealed/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/willowsenator/sealed/VehicleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/PatternMatchingExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/recordmatching/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/recordmatching/AnimalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/recordmatching/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/recordmatching/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/willowsenator/patternMatching/PatternMatchingExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/willowsenator/patternMatching/recordmatching/AnimalServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/willowsenator/EnhancedSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/enhancedswitch/EnhancedSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/willowsenator/ProductRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/record/ProductRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/willowsenator/TextBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/textblocks/TextBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/willowsenator/ProductRecordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/willowsenator/record/ProductRecordTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +43,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Article" />
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -82,7 +76,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Develop/projects/java/skeleton-schedule-omar-moreno&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Develop/projects/java/checkOutServiceWithJavaNewFeatures&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -97,18 +91,21 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.willowsenator.patternMatching.recordmatching" />
       <recent name="org.willowsenator.sealed" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.willowsenator.patternMatching.recordmatching" />
+      <recent name="org.willowsenator.patternMatching" />
       <recent name="org.willowsenator.sealed" />
       <recent name="org.willowsenator" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.VehicleTest.drive">
-    <configuration name="ProductRecordTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AnimalServiceTest.retrieveNameGuardedPattern">
+    <configuration name="AnimalServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -121,7 +118,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.willowsenator.record.ProductRecordTest&quot;" />
+            <option value="&quot;org.willowsenator.patternMatching.recordmatching.AnimalServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -132,7 +129,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ProductRecordTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AnimalServiceTest.retrieveName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -145,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.willowsenator.ProductRecordTest&quot;" />
+            <option value="&quot;org.willowsenator.patternMatching.recordmatching.AnimalServiceTest.retrieveName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -156,7 +153,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ProductRecordTest.createProductComparison" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AnimalServiceTest.retrieveNameGuardedPattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -169,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.willowsenator.ProductRecordTest.createProductComparison&quot;" />
+            <option value="&quot;org.willowsenator.patternMatching.recordmatching.AnimalServiceTest.retrieveNameGuardedPattern&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -180,7 +177,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="VehicleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AnimalServiceTest.retrieveNameV2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -193,7 +190,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.willowsenator.sealed.VehicleTest&quot;" />
+            <option value="&quot;org.willowsenator.patternMatching.recordmatching.AnimalServiceTest.retrieveNameV2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,7 +201,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="VehicleTest.drive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PatternMatchingExampleTest.patternUsingSwitch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -217,7 +214,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.willowsenator.sealed.VehicleTest.drive&quot;" />
+            <option value="&quot;org.willowsenator.patternMatching.PatternMatchingExampleTest.patternUsingSwitch&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -243,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.VehicleTest.drive" />
-        <item itemvalue="Gradle.ProductRecordTest (1)" />
-        <item itemvalue="Gradle.VehicleTest" />
-        <item itemvalue="Gradle.ProductRecordTest" />
-        <item itemvalue="Gradle.ProductRecordTest.createProductComparison" />
+        <item itemvalue="Gradle.AnimalServiceTest.retrieveNameGuardedPattern" />
+        <item itemvalue="Gradle.AnimalServiceTest" />
+        <item itemvalue="Gradle.AnimalServiceTest.retrieveNameV2" />
+        <item itemvalue="Gradle.AnimalServiceTest.retrieveName" />
+        <item itemvalue="Gradle.PatternMatchingExampleTest.patternUsingSwitch" />
       </list>
     </recent_temporary>
   </component>
@@ -266,6 +263,10 @@
       <workItem from="1698093351274" duration="143000" />
       <workItem from="1698094689964" duration="1408000" />
       <workItem from="1699114635713" duration="183000" />
+      <workItem from="1699723939566" duration="15000" />
+      <workItem from="1700004127424" duration="35000" />
+      <workItem from="1700359447859" duration="5000" />
+      <workItem from="1701288987729" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Add ProductRecord, EnhancedSwitch and TextBlocks">
       <option name="closed" value="true" />
