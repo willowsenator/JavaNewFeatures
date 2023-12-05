@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0091f37f-580e-4f28-bf24-ed3ff7006787" name="Changes" comment="Add ProductRecord, EnhancedSwitch and TextBlocks">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/PatternMatchingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/recordmatching/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/recordmatching/AnimalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/recordmatching/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/patternMatching/recordmatching/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/willowsenator/patternMatching/PatternMatchingExampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/willowsenator/patternMatching/recordmatching/AnimalServiceTest.java" afterDir="false" />
+    <list default="true" id="0091f37f-580e-4f28-bf24-ed3ff7006787" name="Changes" comment="Web Client synchronous">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/willowsenator/http/MovieClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/willowsenator/http/MovieClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/willowsenator/http/MovieClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/willowsenator/http/MovieClientTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +39,7 @@
       <list>
         <option value="Article" />
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -53,6 +49,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;willowsenator&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6df5d53f-97f1-442b-99ab-ca606a6c5745" />
+        <option name="url" value="git@github.com:willowsenator/JavaNewFeatures.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -98,13 +111,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.willowsenator.http" />
       <recent name="org.willowsenator.patternMatching.recordmatching" />
       <recent name="org.willowsenator.patternMatching" />
       <recent name="org.willowsenator.sealed" />
       <recent name="org.willowsenator" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AnimalServiceTest.retrieveNameGuardedPattern">
+  <component name="RunManager" selected="Gradle.MovieClientTest.getMovieByIdAsync">
     <configuration name="AnimalServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -119,30 +133,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.willowsenator.patternMatching.recordmatching.AnimalServiceTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="AnimalServiceTest.retrieveName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.willowsenator.patternMatching.recordmatching.AnimalServiceTest.retrieveName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,7 +191,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PatternMatchingExampleTest.patternUsingSwitch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MovieClientTest.getMovieById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -214,7 +204,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.willowsenator.patternMatching.PatternMatchingExampleTest.patternUsingSwitch&quot;" />
+            <option value="&quot;org.willowsenator.http.MovieClientTest.getMovieById&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MovieClientTest.getMovieByIdAsync" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.willowsenator.http.MovieClientTest.getMovieByIdAsync&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -240,11 +254,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MovieClientTest.getMovieByIdAsync" />
+        <item itemvalue="Gradle.MovieClientTest.getMovieById" />
         <item itemvalue="Gradle.AnimalServiceTest.retrieveNameGuardedPattern" />
         <item itemvalue="Gradle.AnimalServiceTest" />
         <item itemvalue="Gradle.AnimalServiceTest.retrieveNameV2" />
-        <item itemvalue="Gradle.AnimalServiceTest.retrieveName" />
-        <item itemvalue="Gradle.PatternMatchingExampleTest.patternUsingSwitch" />
       </list>
     </recent_temporary>
   </component>
@@ -267,6 +281,10 @@
       <workItem from="1700004127424" duration="35000" />
       <workItem from="1700359447859" duration="5000" />
       <workItem from="1701288987729" duration="9000" />
+      <workItem from="1701476171828" duration="904000" />
+      <workItem from="1701732107123" duration="1541000" />
+      <workItem from="1701733676286" duration="993000" />
+      <workItem from="1701817625305" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="Add ProductRecord, EnhancedSwitch and TextBlocks">
       <option name="closed" value="true" />
@@ -292,7 +310,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698008708210</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="PatternMaching">
+      <option name="closed" value="true" />
+      <created>1701476768478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701476768478</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Web Client synchronous">
+      <option name="closed" value="true" />
+      <created>1701817687155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701817687155</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +334,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add ProductRecord, EnhancedSwitch and TextBlocks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ProductRecord, EnhancedSwitch and TextBlocks" />
+    <MESSAGE value="PatternMaching" />
+    <MESSAGE value="Web Client synchronous" />
+    <option name="LAST_COMMIT_MESSAGE" value="Web Client synchronous" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

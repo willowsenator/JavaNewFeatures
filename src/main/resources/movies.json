@@ -1,0 +1,16 @@
+[
+  {
+  "movie_id": 1,
+  "name": "Ashoka",
+  "year": 2023,
+  "cast": "Rosario Dawson, David Tennant, Natasha Liu Bordizzo",
+  "release_date": "2023-10-05"
+  },
+  {
+    "movie_id": 2,
+    "name": "ObiWan",
+    "year": 2022,
+    "cast": "Ewan McGregor, Hayden Christensen",
+    "release_date": "2022-07-07"
+  }
+]
