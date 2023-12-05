@@ -1,6 +1,7 @@
 package org.willowsenator.http;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -10,6 +11,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class MovieClient {
@@ -48,6 +50,44 @@ public class MovieClient {
                 }
             });
 
+
+
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<Movie> getAllMovies(){
+        var request = requestBuilder(ALL_MOVIES_URL);
+        try {
+            var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            System.out.println("Status code : " + response.statusCode());
+            System.out.println("Response body: " + response.body());
+            return objectMapper.readValue(response.body(), new TypeReference<>() {
+            });
+
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+    public CompletableFuture<List<Movie>> getAllMoviesAsync(){
+        var request = requestBuilder(ALL_MOVIES_URL);
+        try {
+            var response = client.sendAsync(request, HttpResponse.BodyHandlers.ofString());
+
+            return response.thenApply(httpResponse -> {
+                System.out.println("Status code : " + httpResponse.statusCode());
+                System.out.println("Response body: " + httpResponse.body());
+                try {
+                    return objectMapper.readValue(httpResponse.body(), new TypeReference<>() {
+                    });
+                } catch (JsonProcessingException e) {
+                    throw new RuntimeException(e);
+                }
+            });
 
 
         } catch (Exception e) {

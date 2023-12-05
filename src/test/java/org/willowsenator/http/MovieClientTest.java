@@ -27,4 +27,20 @@ class MovieClientTest {
         Assertions.assertEquals("Rosario Dawson, David Tennant, Natasha Liu Bordizzo", movie.cast());
         Assertions.assertEquals("2023-10-05", movie.release_date().toString());
     }
+
+    @Test
+    void getAllMovies(){
+        var moviesList = client.getAllMovies();
+
+        Assertions.assertNotNull(moviesList);
+        assert moviesList.size() == 2;
+    }
+
+    @Test
+    void getAllMoviesAsync(){
+        var moviesList = client.getAllMoviesAsync().join();
+
+        Assertions.assertNotNull(moviesList);
+        assert moviesList.size() == 2;
+    }
 }
